@@ -107,6 +107,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	wchar_t* infile = argv[1];
 	wchar_t outfile[MAX_PATH] = { 0 };
+	printf("数据库已解密!输出dingtalk.db_plain.db");
 	wsprintf(outfile, L"%s_plain.db", infile);
 
 	FILE* fpdb = _wfopen(infile, L"rb+");
